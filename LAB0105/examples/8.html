@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Example</title>
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="300"></canvas>
+
+<script>
+  var canvas = document.getElementById('myCanvas');
+  var context = canvas.getContext('2d');
+
+  var image = new Image();
+  image.src = "images/lab5.jpg";
+
+  image.onload = function() {
+    var maxWidth = 200; // Максимальна ширина зображення
+    var maxHeight = 150; // Максимальна висота зображення
+
+    // Обчислення нових розмірів зображення
+    var width = image.width;
+    var height = image.height;
+
+    if (width > maxWidth) {
+      height *= maxWidth / width;
+      width = maxWidth;
+    }
+
+    if (height > maxHeight) {
+      width *= maxHeight / height;
+      height = maxHeight;
+    }
+
+    // Розміщення зображення на полотні зі стисненням
+    context.drawImage(image, 50, 50, width, height);
+  };
+
+</script>
+</body>
+</html>
