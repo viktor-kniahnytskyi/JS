@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Кількість днів між датами</title>
+    <script type="text/javascript">
+        function calculateDays() {
+            var startDate = document.getElementById("startDate").value;
+            var endDate = document.getElementById("endDate").value;
+
+            // Розбиття дат на складові
+            var startParts = startDate.split(".");
+            var endParts = endDate.split(".");
+
+            // Створення об'єктів дат
+            var startDateObj = new Date(startParts[2], startParts[1] - 1, startParts[0]);
+            var endDateObj = new Date(endParts[2], endParts[1] - 1, endParts[0]);
+
+            // Визначення різниці в днях
+            var timeDiff = Math.abs(endDateObj.getTime() - startDateObj.getTime());
+            var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+
+            // Виведення результату
+            document.getElementById("result").innerHTML = "Кількість днів між датами: " + diffDays;
+        }
+    </script>
+</head>
+<body>
+<h1>Визначення кількості днів між датами</h1>
+<form accept-charset="UTF-8">
+    <label for="startDate">Початкова дата (dd.mm.yyyy):</label>
+    <input type="text" id="startDate" placeholder="дд.мм.рррр" />
+    <br />
+    <label for="endDate">Кінцева дата (dd.mm.yyyy):</label>
+    <input type="text" id="endDate" placeholder="дд.мм.рррр" />
+    <br />
+    <button type="button" onclick="calculateDays()">Обчислити</button>
+</form>
+<p id="result"></p>
+</body>
+</html>
