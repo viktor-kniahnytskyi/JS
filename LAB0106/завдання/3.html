@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Вікно №3</title>
+    <style>
+        body {
+            background-color: #e0e0e0;
+        }
+    </style>
+    <script>
+        var timer;
+
+        function startTimer() {
+            timer = setTimeout(closeWindow, 120000); // 120000 мілісекунд = 2 хвилини
+        }
+
+        function resetTimer() {
+            clearTimeout(timer);
+            startTimer();
+        }
+
+        function closeWindow() {
+            window.close();
+        }
+
+        window.onload = function() {
+            startTimer();
+            document.addEventListener('mousemove', resetTimer);
+        };
+    </script>
+</head>
+<body>
+<h1>Вікно №3</h1>
+<p>Це вікно №3</p>
+
+<p>Закриття вікна відбудеться автоматично через 2 хвилини без активності.</p>
+</body>
+</html>

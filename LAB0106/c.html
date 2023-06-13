@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Обробка подій в JS</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+<h1>Лабораторна робота з обробки подій в JavaScript</h1>
+
+<script type="text/javascript">
+  // Сценарій в) - метод write
+  var leg1 = 8; // перший катет
+  var leg2 = 10; // другий катет
+
+  var area = (leg1 * leg2) / 2;
+
+  document.write("<p>Площа прямокутного трикутника:</p>");
+  document.write("<p>За допомогою методу write: " + area + " кв. см</p>");
+
+  document.write("<br>"); // Роздільний рядок
+
+  // Сценарій в) - функція
+  function calculateTriangleArea(leg1, leg2) {
+    var area = (leg1 * leg2) / 2;
+    return area;
+  }
+
+  var area2 = calculateTriangleArea(leg1, leg2);
+
+  document.write("<p>За допомогою функції: " + area2 + " кв. см</p>");
+
+  document.write("<br>"); // Роздільний рядок
+</script>
+
+<script type="text/javascript">
+  // Сценарій в) - введення даних з форми
+  function calculateAreaFromForm() {
+    var leg1Input = document.getElementById("leg1");
+    var leg2Input = document.getElementById("leg2");
+    var resultElement = document.getElementById("result");
+
+    var leg1Value = parseFloat(leg1Input.value);
+    var leg2Value = parseFloat(leg2Input.value);
+
+    var area = (leg1Value * leg2Value) / 2;
+
+    resultElement.textContent = "За допомогою введених даних: " + area + " кв. см";
+  }
+</script>
+
+<h2>Введіть дані для обчислення площі прямокутного трикутника:</h2>
+<form>
+  <label for="leg1">Перший катет (см):</label>
+  <input type="text" id="leg1" name="leg1" required><br>
+
+  <label for="leg2">Другий катет (см):</label>
+  <input type="text" id="leg2" name="leg2" required><br>
+
+  <input type="button" value="Обчислити" onclick="calculateAreaFromForm()">
+</form>
+
+<p id="result"></p>
+
+<noscript>
+  <p>Для коректної роботи цієї сторінки необхідна підтримка JavaScript.</p>
+</noscript>
+</body>
+</html>

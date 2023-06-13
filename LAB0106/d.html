@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Обробка подій в JS</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>Лабораторна робота з обробки подій в JavaScript</h1>
+
+<script type="text/javascript">
+    // Сценарій г) - ввод даних з форми
+    function calculateIncome() {
+        var income1Input = document.getElementById("income1");
+        var income2Input = document.getElementById("income2");
+        var income3Input = document.getElementById("income3");
+
+        var income1 = parseFloat(income1Input.value);
+        var income2 = parseFloat(income2Input.value);
+        var income3 = parseFloat(income3Input.value);
+
+        var totalIncome = income1 + income2 + income3;
+        var taxAmount = totalIncome * 0.13;
+        var netIncome = totalIncome - taxAmount;
+
+        document.getElementById("totalIncome").textContent = "Загальна сума доходу за квартал: " + totalIncome + " грн";
+        document.getElementById("taxAmount").textContent = "Сума прибуткового податку (13%): " + taxAmount + " грн";
+        document.getElementById("netIncome").textContent = "Сума, що підлягає видачі на руки: " + netIncome + " грн";
+    }
+</script>
+
+<h2>Введіть інформацію про доходи за квартал:</h2>
+<form>
+    <label for="income1">Дохід 1:</label>
+    <input type="text" id="income1" name="income1" required><br>
+
+    <label for="income2">Дохід 2:</label>
+    <input type="text" id="income2" name="income2" required><br>
+
+    <label for="income3">Дохід 3:</label>
+    <input type="text" id="income3" name="income3" required><br>
+
+    <input type="button" value="Обчислити" onclick="calculateIncome()">
+</form>
+
+<h3>Результати обчислень:</h3>
+<p id="totalIncome"></p>
+<p id="taxAmount"></p>
+<p id="netIncome"></p>
+
+<noscript>
+    <p>Для коректної роботи цієї сторінки необхідна підтримка JavaScript.</p>
+</noscript>
+</body>
+</html>

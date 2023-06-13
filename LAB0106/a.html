@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Обробка подій в JS</title>
+</head>
+<body>
+<h1>Лабораторна робота з обробки подій в JavaScript</h1>
+
+<script type="text/javascript">
+    // Сценарій а) - метод write
+    document.write("Цей рядок має номер 1, ");
+    document.write("цей рядок має номер 2.");
+
+    document.write("<br>"); // Роздільний рядок
+
+    // Сценарій а) - функція
+    function printNumberedStrings() {
+        var str1 = "цей рядок має номер 1";
+        var str2 = "цей рядок має номер 2";
+
+        document.write(str1 + ", " + str2);
+    }
+
+    printNumberedStrings();
+</script>
+
+<noscript>
+    <p>Для коректної роботи цієї сторінки необхідна підтримка JavaScript.</p>
+</noscript>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Вікно №2</title>
+    <style>
+        body {
+            background-color: #e0e0e0;
+        }
+
+        #content {
+            display: none;
+        }
+    </style>
+    <script>
+        function checkPassword() {
+            var password = prompt("Введіть пароль:");
+            if (password === "secret") {
+                document.getElementById('content').style.display = 'block';
+            } else {
+                alert("Невірний пароль!");
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>Вікно №2</h1>
+<p>Це вікно №2</p>
+
+<button onclick="checkPassword()">Ввійти</button>
+
+<div id="content">
+    <p>Це вміст документа, доступний після введення пароля.</p>
+</div>
+</body>
+</html>
