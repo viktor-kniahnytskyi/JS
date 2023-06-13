@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Example</title>
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="300"></canvas>
+
+<script>
+  var canvas = document.getElementById('myCanvas');
+  var context = canvas.getContext('2d');
+
+  // Вставка тексту
+  context.font = '24px Arial';
+  context.fillText('Hello, World!', 50, 50);
+
+</script>
+</body>
+</html>

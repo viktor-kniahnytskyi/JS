@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Малювання на полотні</title>
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="300"></canvas>
+
+<script>
+  var canvas = document.getElementById('myCanvas');
+  var context = canvas.getContext('2d');
+
+  // Малювання прямокутника
+  context.fillRect(50, 50, 100, 100);
+
+  // Малювання кола
+  context.beginPath();
+  context.arc(250, 150, 50, 0, 2 * Math.PI);
+  context.fill();
+
+  // Малювання лінії
+  context.moveTo(350, 50);
+  context.lineTo(450, 150);
+  context.stroke();
+
+  // Малювання трикутника
+  context.beginPath();
+  context.moveTo(150, 200);
+  context.lineTo(200, 250);
+  context.lineTo(100, 250);
+  context.closePath();
+  context.stroke();
+
+</script>
+</body>
+</html>
