@@ -1,0 +1,15 @@
+D:\Навчання\ООП\EXAM(C#)\EXAM(C#)\bin\Debug\net6.0\EXAM(C#).exe
+D:\Навчання\ООП\EXAM(C#)\EXAM(C#)\bin\Debug\net6.0\EXAM(C#).deps.json
+D:\Навчання\ООП\EXAM(C#)\EXAM(C#)\bin\Debug\net6.0\EXAM(C#).runtimeconfig.json
+D:\Навчання\ООП\EXAM(C#)\EXAM(C#)\bin\Debug\net6.0\EXAM(C#).dll
+D:\Навчання\ООП\EXAM(C#)\EXAM(C#)\bin\Debug\net6.0\EXAM(C#).pdb
+D:\Навчання\ООП\EXAM(C#)\EXAM(C#)\obj\Debug\net6.0\EXAM(C#).csproj.AssemblyReference.cache
+D:\Навчання\ООП\EXAM(C#)\EXAM(C#)\obj\Debug\net6.0\EXAM(C#).GeneratedMSBuildEditorConfig.editorconfig
+D:\Навчання\ООП\EXAM(C#)\EXAM(C#)\obj\Debug\net6.0\EXAM(C#).AssemblyInfoInputs.cache
+D:\Навчання\ООП\EXAM(C#)\EXAM(C#)\obj\Debug\net6.0\EXAM(C#).AssemblyInfo.cs
+D:\Навчання\ООП\EXAM(C#)\EXAM(C#)\obj\Debug\net6.0\EXAM(C#).csproj.CoreCompileInputs.cache
+D:\Навчання\ООП\EXAM(C#)\EXAM(C#)\obj\Debug\net6.0\EXAM(C#).dll
+D:\Навчання\ООП\EXAM(C#)\EXAM(C#)\obj\Debug\net6.0\refint\EXAM(C#).dll
+D:\Навчання\ООП\EXAM(C#)\EXAM(C#)\obj\Debug\net6.0\EXAM(C#).pdb
+D:\Навчання\ООП\EXAM(C#)\EXAM(C#)\obj\Debug\net6.0\EXAM(C#).genruntimeconfig.cache
+D:\Навчання\ООП\EXAM(C#)\EXAM(C#)\obj\Debug\net6.0\ref\EXAM(C#).dll
